@@ -76,17 +76,11 @@
                                     </div>
                                 </div>
                             </li>
-
-
-
                             <li class="nav-item dropdown dropdown-large">
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <div class="header-notifications-list">
                                 </div>
                             </li>
-
-                            
-
                             <li class="nav-item dropdown dropdown-large">
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <div class="header-message-list">
@@ -118,3 +112,5 @@
         </header>
     </div>
     <!-- Page wrapper end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    

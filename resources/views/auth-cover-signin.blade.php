@@ -35,7 +35,7 @@
 
                         <div class="card shadow-none bg-transparent shadow-none rounded-0 mb-0">
 							<div class="card-body">
-                                 <img src="/assets/images/login-images/undraw_login_re_4vu2.svg" class="img-fluid auth-img-cover-login" width="650" alt=""/>
+                                 <img src="assets/images/login-images/login-cover.svg" class="img-fluid auth-img-cover-login" width="650" alt=""/>
 							</div>
 						</div>
 						
@@ -54,9 +54,8 @@
 									<div class="form-body">
 										<form class="row g-3">
 											<div class="col-12">
-												<label for="inputEmailAddress" class="form-label">Email</label>
-												<input type="email" class="form-control" id="inputEmailAddress" placeholder="jhon@example.com">
-											</div>
+												<label for="inputEmailAddress" class="form-label">Username</label>
+												<input type="text" class="form-control" id="inputUsername" name="username" placeholder="Enter Username">											</div>
 											<div class="col-12">
 												<label for="inputChoosePassword" class="form-label">Password</label>
 												<div class="input-group" id="show_hide_password">

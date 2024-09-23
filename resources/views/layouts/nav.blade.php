@@ -15,7 +15,7 @@
                     <div class="offcanvas-body">
                       <ul class="navbar-nav align-items-center flex-grow-1">
                       
-                        <a class="nav-link" href="{{ url('index') }}">
+                        <a class="nav-link" href="{{ url('admin.dashboard') }}">
                           <div class="parent-icon">
                             <i class='bx bx-home-alt'></i>
                           </div>
@@ -72,8 +72,7 @@
                                 <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
                             </a>
                             <ul class="dropdown-menu">
-                              <li> <a class="dropdown-item" href="{{ url('widgets') }}"><i class='bx bx-wine'></i>Widgets</a></li>
-                              <li class="nav-item dropend">
+                          <li class="nav-item dropend">
                                 <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-cart' ></i>eCommerce</a>
                                 <ul class="dropdown-menu submenu">
                                    <li><a class="dropdown-item" href="{{ url('ecommerce-products-details') }}"><i class='bx bx-radio-circle'></i>Product Details</a></li>
@@ -83,20 +82,11 @@
                               <li class="nav-item dropend">
                                 <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-ghost'></i>Components</a>
                                 <ul class="dropdown-menu scroll-menu">
-                                    <li><a class="dropdown-item" href="{{ url('component-accordions') }}"><i class='bx bx-radio-circle'></i>Accordions</a></li>
-                                    <li><a class="dropdown-item" href="{{ url('component-carousels') }}"><i class='bx bx-radio-circle'></i>Carousels</a></li>
                                     <li><a class="dropdown-item" href="{{ url('component-modals') }}"><i class='bx bx-radio-circle'></i>Modals</a></li>
                                     <li><a class="dropdown-item" href="{{ url('component-notifications') }}"><i class='bx bx-radio-circle'></i>Notifications</a></li>
                                   </ul>
                               </li>
-                              <li class="nav-item dropend">
-                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-card' ></i>Content</a>
-                                <ul class="dropdown-menu submenu">
-                                    <li><a class="dropdown-item" href="{{ url('content-grid-system') }}"><i class='bx bx-radio-circle'></i>Grid System</a></li>
-                                    <li><a class="dropdown-item" href="{{ url('content-text-utilities') }}"><i class='bx bx-radio-circle'></i>Text Utilities</a></li>
-                                  </ul>
-                              </li>
-                            </ul>
+                             </ul>
                           </li>
                          
                         
