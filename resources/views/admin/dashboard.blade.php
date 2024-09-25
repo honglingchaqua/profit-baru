@@ -4,58 +4,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     
-    <style>
-        .news-marquee {
-            background-color: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+  
 @endsection
 
 @section("wrapper")
 <div class="page-wrapper">
     <div class="page-content">
+        <div class="container mt-4">
+            <h2 class="text-center mb-4">
+                <!-- Ikon wrench di awal -->
+                <i class="fas fa-wrench "></i>
+                Status Service
+            </h2>
+        </div>
+        
         <!-- Card Section -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
-            <div class="col">
-                <div class="card border-start border-0 border-4 border-info">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <div>
-                                <p class="mb-0 text-secondary">Total Orders</p>
-                                <h4 class="my-1 text-info">4865</h4>
-                                <p class="mb-0 font-13">+2.5% from last week</p>
-                            </div>
-                            <div class="widgets-icons bg-light-info text-info ms-auto"><i class='bx bxs-cart'></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="col">
                 <div class="card border-start border-0 border-4 border-danger">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div>
-                                <p class="mb-0 text-secondary">Total Revenue</p>
-                                <h4 class="my-1 text-danger">$84,245</h4>
-                                <p class="mb-0 font-13">+5.4% from last week</p>
+                                <p class="mb-0 text-secondary">Skip</p>
+                                <h4 class="my-1 text-danger">7</h4>
                             </div>
-                            <div class="widgets-icons bg-light-danger text-danger ms-auto"><i class='bx bxs-wallet'></i></div>
+                            <div class="widgets-icons bg-light-danger text-danger ms-auto"><i class='bx bx-sad bx-tada' ></i></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card border-start border-0 border-4 border-success">
+                <div class="card border-start border-0 border-4 border-info">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div>
-                                <p class="mb-0 text-secondary">Bounce Rate</p>
-                                <h4 class="my-1 text-success">34.6%</h4>
-                                <p class="mb-0 font-13">-4.5% from last week</p>
+                                <p class="mb-0 text-secondary">Late</p>
+                                <h4 class="my-1 text-info">12</h4>
                             </div>
-                            <div class="widgets-icons bg-light-success text-success ms-auto"><i class='bx bxs-bar-chart-alt-2'></i></div>
+                            <div class="widgets-icons bg-light-info text-info ms-auto"><i class='bx bx-shocked bx-tada' ></i></div>
                         </div>
                     </div>
                 </div>
@@ -65,17 +52,29 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div>
-                                <p class="mb-0 text-secondary">Total Customers</p>
-                                <h4 class="my-1 text-warning">8.4K</h4>
-                                <p class="mb-0 font-13">+8.4% from last week</p>
+                                <p class="mb-0 text-secondary">Early</p>
+                                <h4 class="my-1 text-warning">0</h4>
                             </div>
-                            <div class="widgets-icons bg-light-warning text-warning ms-auto"><i class='bx bxs-group'></i></div>
+                            <div class="widgets-icons bg-light-warning text-warning ms-auto"><i class='bx bxs-smile bx-tada' ></i></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-start border-0 border-4 border-success">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <p class="mb-0 text-secondary">Punctual</p>
+                                <h4 class="my-1 text-success">1</h4>
+                            </div>
+                            <div class="widgets-icons bg-light-success text-success ms-auto"><i class='bx bx-laugh bx-tada' ></i> </i></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+<hr>
         <!-- Table Section -->
         <div class="container mt-4">
             <div class="news-marquee mb-4">
@@ -110,7 +109,7 @@
                                             {{ $vehicle->nopol }}
                                         </td>
                                         <td>
-                                            <a href="/vehicles/{{ $vehicle->id }}/edit" class="text-primary">
+                                            <a href="{{ route('admin.edit', $vehicle->id) }}" class="text-primary">
                                                 {{ $vehicle->no_rangka }}
                                             </a>
                                         </td>
@@ -143,13 +142,13 @@
                         <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/gallery/20.png" class="d-block w-100" alt="Service 1">
+                                    <img src="assets/images/gallery/gr1.jpeg" class="d-block w-100" alt="Service 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/gallery/21.png" class="d-block w-100" alt="Service 2">
+                                    <img src="assets/images/gallery/gr2.jpeg" class="d-block w-100" alt="Service 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/gallery/22.png" class="d-block w-100" alt="Service 3">
+                                    <img src="assets/images/gallery/gr3.jpeg" class="d-block w-100" alt="Service 3">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
@@ -172,13 +171,13 @@
                         <div id="marketingCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/gallery/20.png" class="d-block w-100" alt="Marketing 1">
+                                    <img src="assets/images/gallery/sales1.png" class="d-block w-100" alt="Marketing 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/gallery/21.png" class="d-block w-100" alt="Marketing 2">
+                                    <img src="assets/images/gallery/sales2.png" class="d-block w-100" alt="Marketing 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/gallery/22.png" class="d-block w-100" alt="Marketing 3">
+                                    <img src="assets/images/gallery/sales3.jpg" class="d-block w-100" alt="Marketing 3">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#marketingCarousel" data-bs-slide="prev">
@@ -201,13 +200,13 @@
                         <div id="repairCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/gallery/20.png" class="d-block w-100" alt="Repair 1">
+                                    <img src="assets/images/gallery/bp1.jpeg" class="d-block w-100" alt="Repair 1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/gallery/21.png" class="d-block w-100" alt="Repair 2">
+                                    <img src="assets/images/gallery/bp2.jpeg" class="d-block w-100" alt="Repair 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/gallery/22.png" class="d-block w-100" alt="Repair 3">
+                                    <img src="assets/images/gallery/gr4.jpeg" class="d-block w-100" alt="Repair 3">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#repairCarousel" data-bs-slide="prev">
@@ -233,7 +232,7 @@
 <script>
     $(document).ready(function() {
         $('.carousel').carousel({
-            interval: 2000
+            interval: 3000
         });
     });
 </script>
